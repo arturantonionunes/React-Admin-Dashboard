@@ -17,7 +17,7 @@ const Sidebar = () => {
       <div className="sidebarTop">
         <span className="sidebarTopLogo">Ubadmin</span>
       </div>
-      <hr />
+
       <div className="sidebarMid">
         <ul>
           <p className="sidebarTitle">MAIN</p>
@@ -71,7 +71,10 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className="sidebarBot">theme</div>
+      <div className="sidebarBot">
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
+      </div>
     </div>
   );
 };
