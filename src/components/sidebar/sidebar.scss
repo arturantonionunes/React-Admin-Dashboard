@@ -19,7 +19,7 @@
   }
 
   &Mid {
-    padding-left: 10px;
+    padding: 10px;
 
     ul {
       list-style: none;
@@ -32,6 +32,11 @@
         color: #999;
         margin-top: 15px;
         margin-bottom: 5px;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+          text-align: center;
+        }
       }
 
       li {
@@ -40,9 +45,17 @@
         padding: 5px;
         cursor: pointer;
 
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+        }
+
         .sidebarIcon {
-          font-size: 18px;
+          font-size: 2.4rem;
           color: #7451f8;
+
+          @media screen and (max-width: 768px) {
+            margin-top: 10px;
+          }
         }
 
         span {
@@ -54,6 +67,10 @@
           &:hover {
             color: #ccc;
           }
+
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
       }
     }
@@ -62,7 +79,11 @@
   .sidebarBot {
     display: flex;
     align-items: center;
-    margin: 10px;
+    padding: 10px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .colorOption {
       width: 20px;

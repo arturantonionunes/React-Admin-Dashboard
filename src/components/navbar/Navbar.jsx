@@ -5,6 +5,7 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import SortIcon from "@mui/icons-material/Sort";
 
 const Navbar = () => {
@@ -14,6 +15,10 @@ const Navbar = () => {
         <div className="search">
           <input type="text" placeholder="Procurar..." />
           <SearchOutlinedIcon className="navbarIcon" />
+        </div>
+
+        <div className="mobileIcon">
+          <MenuOutlinedIcon />
         </div>
         <div className="navbarMenu">
           <div className="navbarItem">
@@ -34,7 +39,7 @@ const Navbar = () => {
             <div className="counter">1</div>
           </div>
           <div className="navbarItem">
-            <SortIcon />
+            <SortIcon className="navbarIcon" />
           </div>
           <div className="navbarItem">
             <img
